@@ -1,0 +1,72 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01. Entidades", "01. Entidades", "{3AD92E5E-B896-4292-9E8A-03DDDEB97858}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicalEvents.Entities", "MusicalEvents.Entities\MusicalEvents.Entities.csproj", "{C9368647-907D-49FF-8343-31EA1D19D0A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. Acceso a Datos", "02. Acceso a Datos", "{CB5BF7D8-F4B5-4833-9364-3C9F31104864}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicalEvents.DataAccess", "MusicalEvents.DataAccess\MusicalEvents.DataAccess.csproj", "{B0F0CBB7-A093-411B-B9DA-936FEC580DD5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05. API REST", "05. API REST", "{ADA572F1-0269-4973-8DFD-9F453EDACD6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicalEvents.API", "MusicalEvents.API\MusicalEvents.API.csproj", "{98CC956B-1823-4D8E-B7BF-689B09E09D1F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. Servicios", "03. Servicios", "{CD21F880-607A-457A-A766-966B93C3848A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicalEvents.Services", "MusicalEvents.Services\MusicalEvents.Services.csproj", "{4382336B-B6BB-49F8-AE75-B33B02770E12}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04. Data Transfer Objects", "04. Data Transfer Objects", "{071CCCCA-04FF-4817-BFDC-7197C3E91062}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicalEvents.Dto", "MusicalEvents.Dto\MusicalEvents.Dto.csproj", "{E1772C67-42B4-47B9-ACC6-1696551E1F3A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06. Pruebas Unitarias", "06. Pruebas Unitarias", "{7213C90B-43A0-40A4-90D0-E572EE328BE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicalEvents.UnitTest", "MusicalEvents.UnitTest\MusicalEvents.UnitTest.csproj", "{02369068-388A-406A-8BE6-F02F774508AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9368647-907D-49FF-8343-31EA1D19D0A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9368647-907D-49FF-8343-31EA1D19D0A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9368647-907D-49FF-8343-31EA1D19D0A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9368647-907D-49FF-8343-31EA1D19D0A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0F0CBB7-A093-411B-B9DA-936FEC580DD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0F0CBB7-A093-411B-B9DA-936FEC580DD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0F0CBB7-A093-411B-B9DA-936FEC580DD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0F0CBB7-A093-411B-B9DA-936FEC580DD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98CC956B-1823-4D8E-B7BF-689B09E09D1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98CC956B-1823-4D8E-B7BF-689B09E09D1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98CC956B-1823-4D8E-B7BF-689B09E09D1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98CC956B-1823-4D8E-B7BF-689B09E09D1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4382336B-B6BB-49F8-AE75-B33B02770E12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4382336B-B6BB-49F8-AE75-B33B02770E12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4382336B-B6BB-49F8-AE75-B33B02770E12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4382336B-B6BB-49F8-AE75-B33B02770E12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1772C67-42B4-47B9-ACC6-1696551E1F3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1772C67-42B4-47B9-ACC6-1696551E1F3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1772C67-42B4-47B9-ACC6-1696551E1F3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1772C67-42B4-47B9-ACC6-1696551E1F3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02369068-388A-406A-8BE6-F02F774508AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02369068-388A-406A-8BE6-F02F774508AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02369068-388A-406A-8BE6-F02F774508AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02369068-388A-406A-8BE6-F02F774508AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C9368647-907D-49FF-8343-31EA1D19D0A7} = {3AD92E5E-B896-4292-9E8A-03DDDEB97858}
+		{B0F0CBB7-A093-411B-B9DA-936FEC580DD5} = {CB5BF7D8-F4B5-4833-9364-3C9F31104864}
+		{98CC956B-1823-4D8E-B7BF-689B09E09D1F} = {ADA572F1-0269-4973-8DFD-9F453EDACD6C}
+		{4382336B-B6BB-49F8-AE75-B33B02770E12} = {CD21F880-607A-457A-A766-966B93C3848A}
+		{E1772C67-42B4-47B9-ACC6-1696551E1F3A} = {071CCCCA-04FF-4817-BFDC-7197C3E91062}
+		{02369068-388A-406A-8BE6-F02F774508AD} = {7213C90B-43A0-40A4-90D0-E572EE328BE6}
+	EndGlobalSection
+EndGlobal
