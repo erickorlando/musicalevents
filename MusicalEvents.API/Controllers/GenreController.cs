@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MusicalEvents.Dto.Request;
+using MusicalEvents.Dto.Response;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -10,16 +12,20 @@ namespace MusicalEvents.API.Controllers
     {
         // GET: api/<GenreController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public BaseCollectionResponse<GenreDto> Get()
         {
-            return new string[] { "value1", "value2" };
+            var response = new BaseCollectionResponse<GenreDto>();
+
+            return response;
         }
 
         // GET api/<GenreController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public BaseResponse<GenreDto> Get(int id)
         {
-            return "value";
+            var response = new BaseResponse<GenreDto>();
+            response.Result = new GenreDto();
+            return response;
         }
 
         // POST api/<GenreController>

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MusicalEvents.DataAccess;
 
@@ -11,9 +12,10 @@ using MusicalEvents.DataAccess;
 namespace MusicalEvents.DataAccess.Migrations
 {
     [DbContext(typeof(MusicalDbContext))]
-    partial class MusicalDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220116045154_AspNetIdentity")]
+    partial class AspNetIdentity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

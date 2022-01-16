@@ -1,8 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using MusicalEvents.Entities;
 
 namespace MusicalEvents.DataAccess;
-public class MusicalDbContext : DbContext
+public class MusicalDbContext : IdentityDbContext<MusicalUserIdentity>
 {
     public MusicalDbContext() 
     {
