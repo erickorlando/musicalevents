@@ -11,8 +11,7 @@ public class Event : BaseEntity
     [StringLength(500)]
     [Required]
     public string? Description { get; set; }
-    public DateOnly EventDate { get; set; }
-    public TimeOnly EventTime { get; set; }
+    public DateTime EventDate { get; set; }
     public int TicketQuantity { get; set; }
 
     public decimal Price { get; set; }
