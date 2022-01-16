@@ -10,11 +10,13 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<MusicalDbContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
-    options.LogTo(Console.WriteLine);
-});
+builder.Services.AddSqlServer<MusicalDbContext>(builder.Configuration.GetConnectionString("Default"));
+
+//builder.Services.AddDbContext<MusicalDbContext>(options =>
+//{
+//    options.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
+//    options.LogTo(Console.WriteLine);
+//});
 
 var app = builder.Build();
 
