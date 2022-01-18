@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using MusicalEvents.DataAccess;
+using MusicalEvents.Entities;
 
 var builder = WebApplication.CreateBuilder(args);
 

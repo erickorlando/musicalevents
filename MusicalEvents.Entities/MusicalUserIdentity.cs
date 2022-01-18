@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace MusicalEvents.DataAccess;
+namespace MusicalEvents.Entities;
 
 public class MusicalUserIdentity : IdentityUser
 {

@@ -26,7 +26,17 @@ public class MusicalDbContext : IdentityDbContext<MusicalUserIdentity>
         modelBuilder.Entity<Event>()
             .Property(p => p.Price)
             .HasPrecision(11, 2);
+        
+        modelBuilder.Entity<Sale>()
+            .Property(p => p.UnitPrice)
+            .HasPrecision(11, 2);
+        
+        modelBuilder.Entity<Sale>()
+            .Property(p => p.TotalSales)
+            .HasPrecision(11, 2);
 
+        modelBuilder.Entity<Sale>()
+            .HasIndex(p => p.UserId, $"IX_Sale_User");
 
     }
 }
