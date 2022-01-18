@@ -10,4 +10,8 @@
     <Folder Include="Response\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MusicalEvents.Entities\MusicalEvents.Entities.csproj" />
+  </ItemGroup>
+
 </Project>
