@@ -24,7 +24,7 @@ namespace MusicalEvents.DataAccess.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("MusicalEvents.Entities.Event", b =>
+            modelBuilder.Entity("MusicalEvents.Entities.Concert", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -88,7 +88,7 @@ namespace MusicalEvents.DataAccess.Migrations
                     b.ToTable("Genres");
                 });
 
-            modelBuilder.Entity("MusicalEvents.Entities.Event", b =>
+            modelBuilder.Entity("MusicalEvents.Entities.Concert", b =>
                 {
                     b.HasOne("MusicalEvents.Entities.Genre", "Genre")
                         .WithMany()

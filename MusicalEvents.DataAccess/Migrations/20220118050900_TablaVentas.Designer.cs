@@ -157,7 +157,7 @@ namespace MusicalEvents.DataAccess.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("MusicalEvents.Entities.Event", b =>
+            modelBuilder.Entity("MusicalEvents.Entities.Concert", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -398,7 +398,7 @@ namespace MusicalEvents.DataAccess.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("MusicalEvents.Entities.Event", b =>
+            modelBuilder.Entity("MusicalEvents.Entities.Concert", b =>
                 {
                     b.HasOne("MusicalEvents.Entities.Genre", "Genre")
                         .WithMany()

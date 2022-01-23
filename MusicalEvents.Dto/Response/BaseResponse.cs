@@ -1,12 +1,17 @@
 ﻿namespace MusicalEvents.Dto.Response;
 
-public class BaseResponse<TData>
-where TData : class
+public class BaseResponse
 {
     public bool Success { get; set; }
+    public ICollection<string> Errors { get; set; }
 
-    public string[]? Errors { get; set; }
+    protected BaseResponse()
+    {
+        Errors = new List<string>();
+    }
+}
 
-    public TData? Result { get; set; }
-
+public class BaseResponseGeneric<TClass> : BaseResponse
+{
+    public TClass Result { get; set; }
 }

@@ -7,7 +7,6 @@ public record LoginDtoResponse
     public string Token { get; set; }
     public DateTime ExpiredTime { get; set; }
     public string UserId { get; set; }
-    public string CustomerId { get; set; }
     public string UserCode { get; set; }
     public string FullName { get; set; }
 }

@@ -17,13 +17,13 @@ public class MusicalDbContext : IdentityDbContext<MusicalUserIdentity>
     }
 
     public DbSet<Genre>? Genres { get; set; }
-    public DbSet<Event>? Events { get; set; }
+    public DbSet<Concert>? Events { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
 
-        modelBuilder.Entity<Event>()
+        modelBuilder.Entity<Concert>()
             .Property(p => p.Price)
             .HasPrecision(11, 2);
         
